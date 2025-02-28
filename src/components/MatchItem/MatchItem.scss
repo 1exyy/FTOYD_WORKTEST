@@ -1,0 +1,82 @@
+.match__item {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__team {
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-column-gap: 14px;
+    font-weight: 600;
+  }
+
+  &__info {
+    text-align: center;
+    display: grid;
+    grid-row-gap: 4px;
+    font-weight: 600;
+  }
+
+  &__score {
+    font-size: 20px;
+  }
+
+  &__status {
+    padding: 6px 8px;
+    font-size: 12px;
+    transition: .3s;
+    border-radius: 4px;
+    min-width: 92px;
+
+    &.finished {
+      background-color: #EB0237;
+    }
+
+    &.ongoing {
+      background-color: #43AD28;
+    }
+
+    &.scheduled {
+      background-color: #EB6402;
+    }
+  }
+}
+
+.match__more {
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 32px;
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+  }
+
+  &__player {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    background-color: #101318;
+    padding: 8px 24px;
+    grid-column-gap: 8px;
+
+    &_nickname {
+      display: flex;
+      grid-column-gap: 8px;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+
+  &__team {
+    grid-area: 2 / 1 / 2 / span 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    background-color: #101318;
+    padding: 14px 24px;
+  }
+}
+

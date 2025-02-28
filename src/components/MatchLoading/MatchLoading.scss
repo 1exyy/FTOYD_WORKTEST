@@ -1,0 +1,39 @@
+.match__skeleton {
+  height: 87px;
+  width: 100%;
+  background-color: #0B0E12;
+
+  display: grid;
+  grid-template-columns: 157px 92px 157px;
+  justify-content: space-between;
+  padding: 16px;
+
+  position: relative;
+  overflow: hidden;
+
+  span {
+    height: 100%;
+    background-color: #2f2f2f;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100%;
+    background-color: rgb(157, 157, 157);
+    animation: skeleton_animation 1.5s infinite linear;
+    opacity: .1;
+    filter: blur(50px);
+    transform: skew(-35deg);
+  }
+}
+
+@keyframes skeleton_animation {
+  from {
+    left: -10%;
+  }
+  to {
+    left: 110%;
+  }
+}
