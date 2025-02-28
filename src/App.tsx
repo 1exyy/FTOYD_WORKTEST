@@ -12,7 +12,7 @@ function App() {
         <div className="container">
             <div className="page__header">
                 <svg width="258" height="23">
-                    <use xlinkHref="#logo"/>
+                    <use xlinkHref="#logo"/>git branch -M main
                 </svg>
                 <div className="page__header_row">
                     {isError && <div className="page__header_error">

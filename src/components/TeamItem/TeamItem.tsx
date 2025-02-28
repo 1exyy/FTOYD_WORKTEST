@@ -12,7 +12,7 @@ const TeamItem: FC<ITeamItemProps> = ({team, ...rest}) => {
             {team.players.map((player, index) => (
                 <div className="match__more__player" key={player.username + index}>
                     <div className="match__more__player_nickname">
-                        <img src="../../assets/avatar_global.png" alt={player.username}/>
+                        <img src="/avatar_global.png" alt={player.username}/>
                         <span>{player.username}</span>
                     </div>
                     <div className=" match__more__output">
